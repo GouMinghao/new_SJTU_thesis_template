@@ -1,0 +1,9 @@
+del *.aux
+del main.out
+del main.log
+del main.toc
+del main.pdf
+xelatex main.tex
+biber main
+xelatex main.tex
+xelatex main.tex

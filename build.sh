@@ -1,0 +1,9 @@
+rm *.aux
+rm main.out
+rm main.log
+rm main.toc
+rm main.pdf
+xelatex main.tex
+biber main
+xelatex main.tex
+xelatex main.tex
