@@ -2,6 +2,7 @@
 研究生院今年发布了官方[LaTex模板](https://www.gs.sjtu.edu.cn/info/1136/8374.htm)。但是此模板显然存在很多明显的问题，也存在一些使用不太方便的地方，在此处进行了修改与调整。
 
 ## 使用方法
+### 本地编译
 1. 无论你使用的是什么操作系统，在使用前需要确保已经完成了[texlive](https://tug.org/texlive/)的安装。本项目只支持使用XeLaTex进行编译。
 
 
@@ -11,6 +12,11 @@ git clone https://github.com/GouMinghao/new_SJTU_thesis_template.git
 ```
 
 3. 运行`build.sh` 或者`build.bat`来完成编译。
+
+### 使用Overleaf
+1. 下载本模板的zip包，或者克隆过后自行压缩打包。
+2. 上传至[Overleaf](latex.sjtu.edu.cn)。
+3. 选择编译器为`XeLaTex`即可完成编译。
 
 ## 与官方模板相比的修改
 
