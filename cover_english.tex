@@ -16,18 +16,25 @@ Shanghai Jiao Tong University for Master Degree}
 ~\\
 ~\\
 ~\\
+\ifx\isblindreview\istrue
 \begin{center}
-\zihao{3} 
-Author: name\\
-Supervisor:  teacher
+    \zihao{3} 
+    Author:  \\ %盲审稿使用，此处不填写
+    Supervisor:  
 \end{center}
+\else
+\begin{center}
+    \zihao{3} 
+    Author: name\\
+    Supervisor:  teacher
+    \end{center}
+\fi
 ~\\
 ~\\
 ~\\
 \begin{center}
-\zihao{3} 
-School of xxxx\\
-Shanghai Jiao Tong University \\
-Shanghai, P.R.China \\
-March 31th, 20xx  
+    \zihao{3} 
+    School of xxx\\
+    Shanghai Jiao Tong University \\
+    Shanghai, P.R.China \\ 
 \end{center}

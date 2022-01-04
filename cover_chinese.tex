@@ -12,25 +12,42 @@
 %该页为中文扉页。无需页眉页脚，纸质论文应装订在右侧
 ~\\
 \begin{center}
-\songti \zihao{2} \textbf{标题}
+    \songti \zihao{2} \textbf{标题}
 \end{center}
 %中文论文标题，1行或2行，宋体，加粗，二号，居中。论文题目不得超过36个汉字
 ~\\
 ~\\
 ~\\
 ~\\
-\begin{center}
-\heiti \zihao{4}
-\begin{tabular}{l}
-\textbf{姓\quad 名：名字}\\
-\textbf{学\quad 号：111122223333}\\
-\textbf{导\quad 师：老板}\\
-\textbf{学\quad 院： xx学院}\\
-\textbf{学科/专业名称：xx技术}\\
-\textbf{申请学位层次：x士}\\
-\end{tabular}
+\ifx\isblindreview\istrue
+\begin{center} %盲审稿使用，此处不填写
+    \heiti \zihao{4}
+    \begin{tabular}{l}
+        \textbf{姓\quad 名：}\\
+        \textbf{学\quad 号：}\\
+        \textbf{导\quad 师：}\\
+        \textbf{学\quad 院： xx学院}\\
+        \textbf{学科/专业名称：xx技术}\\
+        \textbf{申请学位层次：x士}\\
+    \end{tabular}
 \end{center}
+\else
+\begin{center}
+    \heiti \zihao{4}
+    \begin{tabular}{l}
+        \textbf{姓\quad 名：名字}\\
+        \textbf{学\quad 号：111122223333}\\
+        \textbf{导\quad 师：老板}\\
+        \textbf{学\quad 院： xx学院}\\
+        \textbf{学科/专业名称：xx技术}\\
+        \textbf{申请学位层次：x士}\\
+    \end{tabular}
+\end{center}
+\fi
 ~\\
 \begin{center}
-\songti \zihao{4} \textbf{xxxx年x月}
+    \ifx\isblindreview\istrue
+    \else
+    \songti \zihao{4} \textbf{2022年3月}
+    \fi
 \end{center}
