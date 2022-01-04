@@ -3,6 +3,8 @@ main.pdf
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
+*.lof2
+*.lof3
 *.log
 *.lot
 *.fls
